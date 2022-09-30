@@ -15,11 +15,11 @@ To be filled
 # Content
 
 The Examples from the paper are provided as seperate jupyter notebooks, each with a unique name, exactly specifying which example is covered therein. These are:
-- An [Example](https://github.com/juliansester/blob/main/Wasserstein-Q-learning/Example-4.1-CoinToss.ipynb) covering Q learning for a coin toss game (Example 4.1 from the paper).
-- An [Example](https://github.com/juliansester/blob/main/Wasserstein-Q-learning/Example-4.2-MultiArmedBandit.ipynb) covering Q learning for self-exciting bandits (Example 4.2 from the paper).
-- An [Example](https://github.com/juliansester/blob/main/Wasserstein-Q-learning/Example-4.3-StockPrediction.ipynb) covering Q learning for stock price prediction (Example 4.3 from the paper).
+- An [Example](https://github.com/juliansester/Wasserstein-Q-learning/blob/main/Example-4.1-CoinToss.ipynb) covering Q learning for a coin toss game (Example 4.1 from the paper).
+- An [Example](https://github.com/juliansester/Wasserstein-Q-learning/blob/main/Example-4.2-MultiArmedBandit.ipynb) covering Q learning for self-exciting bandits (Example 4.2 from the paper).
+- An [Example](https://github.com/juliansester/Wasserstein-Q-learning/blob/main/Example-4.3-StockPrediction.ipynb) covering Q learning for stock price prediction (Example 4.3 from the paper).
 
-- The file [Functions.py](https://github.com/blob/main/juliansester/Wasserstein-Q-learning/Q_learning.py) contains the Python-code that is employed to train the optimal Q-learning functions.
+- The file [Functions.py](https://github.com/juliansester/Wasserstein-Q-learning/blob/main/Q_learning.py) contains the Python-code that is employed to train the optimal Q-learning functions.
 
 
 # License
