@@ -9,7 +9,7 @@ We prove convergence of the presented algorithm and provide several examples als
 
 # Preprint
 
-Can be found [here](https://arxiv.org/abs/2106.10024)
+... to be filled
 
 
 # Content
