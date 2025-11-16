@@ -122,9 +122,9 @@ def robust_q_learning(X,
     # List of differences of Q Matrices 
     
     for t in tqdm(range(Nr_iter)):
-        X_1 = P_0(X_0,a_t(t,X_0))
         Q_old = copy.deepcopy(Q)
         x,a = X_0, a_t(t,X_0)
+        X_1 = P_0(x,a)                
         x_ind, a_ind = x_index(x),a_index(a)
         # Choose the maximal lambda
         if time_series:
@@ -190,14 +190,13 @@ def q_learning(X,
     if Q_0 is not None:
         Q = Q_0
     Visits = np.zeros([len(X),len(A)])
-    if np.ndim(A)>1:
-        A_list = A
-    else:
-        A_list = np.array([[a] for a in A])
+    
+    A_list = np.array([[a] for a in A])
     if np.ndim(X)>1:
         X_list = X
     else:
         X_list = np.array([[x] for x in X])
+        
 
     def a_index(a):
         return np.flatnonzero((a==A_list).all(1))[0]
@@ -219,9 +218,9 @@ def q_learning(X,
     X_0 = x_0
     # List of differences of Q Matrices 
     for t in tqdm(range(Nr_iter)):
-        X_1 = P_0(X_0,a_t(t,X_0))
         Q_old = copy.deepcopy(Q)
         x,a = X_0, a_t(t,X_0)
+        X_1 = P_0(x,a)                
         x_ind, a_ind = x_index(x),a_index(a)
         # Do the update of Q        
         Q[x_ind, a_ind] = Q_old[x_ind, a_ind]+gamma_t_tilde(Visits[x_ind, a_ind])*(f(t,x,a,X_1)-Q_old[x_ind, a_ind])
